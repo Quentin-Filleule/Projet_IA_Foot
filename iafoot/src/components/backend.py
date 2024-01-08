@@ -3,7 +3,7 @@ from flask_cors import CORS
 import joblib
 import pandas as pd
 
-loaded_model = joblib.load('../../.././Projet_IA_Foot/random_forest_model.pkl')
+loaded_model = joblib.load('../.././PartieIA/random_forest_model.pkl')
 
 app = Flask(__name__)
 CORS(app)  # Active CORS pour toutes les routes
