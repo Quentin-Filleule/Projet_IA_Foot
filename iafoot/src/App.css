@@ -1,38 +1,13 @@
+/* App.css */
+
 .App {
-  text-align: center;
+  background-image: url('./img/img.png');
+  background-size: cover; /* Ajuster la taille de l'image pour couvrir complètement le conteneur */
+  height:2200px; /* Hauteur à 100% de la vue du navigateur, ajustez selon vos besoins */
+  color: #fff; /* Couleur du texte pour améliorer la lisibilité sur l'image */
+  background-position: center;
+  
+  /* Autres styles selon vos besoins */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Ajoutez d'autres styles au besoin pour les éléments enfants de app-container */

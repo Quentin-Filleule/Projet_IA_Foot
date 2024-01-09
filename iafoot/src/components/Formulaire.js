@@ -131,68 +131,17 @@ const Formulaire = ({ onSubmit }) => {
       const responseData = await response.json();
       console.log(responseData);
       // Traitez la réponse si nécessaire
+      onSubmit(responseData);
     } else {
       console.error('Erreur lors de la soumission du formulaire');
     }
     // Réinitialiser les champs après la soumission
     setFullName('');
 
-    onSubmit({
-      full_name,
-      name,
-      birth_date,
-      age,
-      height_cm,
-      weight_kgs,
-      positions,
-      nationality,
-      overall_rating,
-      potential,
-      value_euro,
-      wage_euro,
-      preferred_foot,
-      international_reputation,
-      weak_foot,
-      skill_moves,
-      body_type,
-      release_clause_euro,
-      national_team,
-      national_rating,
-      national_team_position,
-      national_jersey_number,
-      crossing,
-      finishing,
-      heading_accuracy,
-      short_passing,
-      volleys,
-      dribbling,
-      curve,
-      freekick_accuracy,
-      long_passing,
-      ball_control,
-      acceleration,
-      sprint_speed,
-      agility,
-      reactions,
-      balance,
-      shot_power,
-      jumping,
-      stamina,
-      strength,
-      long_shots,
-      aggression,
-      interceptions,
-      positioning,
-      vision,
-      penalties,
-      composure,
-      marking,
-      standing_tackle,
-      sliding_tackle  });
+    
 
   };
 
-  
 
   return (
     <form onSubmit={handleSubmit}>

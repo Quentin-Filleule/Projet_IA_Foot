@@ -52,7 +52,7 @@ def recevoir_donnees():
     prediction_value = predictions[0]
     print("voici la prédiction : " + str(prediction_value))
 
-    response_data = {'Voici la valeur du joueur': str(prediction_value)}
+    response_data = 'Voici la valeur du joueur : ' + str(prediction_value) + ' €'
     return jsonify(response_data)
 
 if __name__ == '__main__':
